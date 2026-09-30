@@ -75,7 +75,7 @@ cleanup_old() {
 
 	find "$DEST" \
 		-type f \
-		-name "backup-*.tar/gz" \
+		-name "backup-*.tar.gz" \
 		-mtime +"$RETENTION_DAYS" \
 		-delete
 
